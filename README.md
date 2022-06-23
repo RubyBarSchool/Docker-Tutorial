@@ -2,12 +2,12 @@
 #### Docker Tutorial for Beginner
 
 ## [Website docker](https://docs.docker.com/)
-## Docker architecture
+## Docker architecture (C) Docker Inc.
 <img src="https://docs.docker.com/engine/images/architecture.svg" alt="Docker architecture" >
 
-## Relationship of attributes ( Luis Herrera Benítez )
+## Docker component interaction ( (C) Luis Herrera Benítez )
 
-
+<img src="./image/docker-component-interaction.png" alt="Docker component interaction" >
 
 ## Docker CLI
 #### Docker pull
