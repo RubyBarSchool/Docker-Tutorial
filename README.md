@@ -33,3 +33,10 @@ TERMINAL =====> DOCKER CLI =====> DOCKER HOST ( DOCKER DAEMON ) === CHECK CACHE 
                                                                                                                   ||
                                                                                                             DOCKER CONTAINER
 ```
+
+#### Docker run
+``` powershell
+ docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+ # example redis
+ docker run --name my-redis -d redis
+```
