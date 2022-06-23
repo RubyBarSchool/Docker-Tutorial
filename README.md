@@ -3,7 +3,7 @@
 
 ## [Website docker](https://docs.docker.com/)
 ## Docker architecture (C) Docker Inc.
-<img src="https://docs.docker.com/engine/images/architecture.svg" alt="Docker architecture" >
+<img src="./image/docker-architecture.png" alt="Docker architecture" >
 
 ## Docker component interaction ( (C) Luis Herrera Benítez )
 
