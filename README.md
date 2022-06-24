@@ -288,3 +288,36 @@ Options:
  # example nginx multiple ports
  docker run -p 3000:80 -p 3030:80 nginx
 ```
+
+#### Docker start
+``` powershell
+Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]
+
+Start one or more stopped containers
+
+Options:
+  -a, --attach               Attach STDOUT/STDERR and forward signals
+      --detach-keys string   Override the key sequence for detaching a
+                             container
+  -i, --interactive          Attach container's STDIN
+```
+
+#### Docker stop
+``` powershell
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containers
+
+Options:
+  -t, --time int   Seconds to wait for stop before killing it (default 10)
+```
+
+#### Docker volumes
+``` powershell
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containers
+
+Options:
+  -t, --time int   Seconds to wait for stop before killing it (default 10)
+```
