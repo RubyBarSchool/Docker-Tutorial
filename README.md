@@ -312,6 +312,9 @@ Options:
   -t, --time int   Seconds to wait for stop before killing it (default 10)
 ```
 
+## Docker volumes ( (C) Amigos )
+<img src="./image/docker-volumes.png" alt="Docker component interaction" >
+
 #### Docker volumes
 ``` powershell
 Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
