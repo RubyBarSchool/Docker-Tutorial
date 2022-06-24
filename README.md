@@ -40,3 +40,12 @@ TERMINAL =====> DOCKER CLI =====> DOCKER HOST ( DOCKER DAEMON ) === CHECK CACHE 
  # example redis
  docker run --name my-redis -d redis:latest
 ```
+
+#### Docker port
+``` powershell
+  docker run -p portlocal:portcontainer [container]
+ # example nginx single port
+ docker run -p 3000:80 nginx 
+ # example nginx multiple ports
+ docker run -p 3000:80 -p 3030:80 nginx
+```
