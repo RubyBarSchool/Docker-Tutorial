@@ -31,7 +31,7 @@
   save        Save one or more images to a tar archive (streamed to STDOUT by default)
   tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
 
-Run 'docker image COMMAND --help' for more information on a command.
+
 ```
 
 #### Docker managing container
@@ -71,7 +71,6 @@ Commands:
   update      Update configuration of one or more containers
   wait        Block until one or more containers stop, then print their exit codes
 
-Run 'docker container COMMAND --help' for more information on a command.
 ```
 
 #### Docker pull
