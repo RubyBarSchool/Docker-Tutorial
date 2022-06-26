@@ -1,8 +1,11 @@
 # <img src="https://img.icons8.com/color/2x/docker.png" alt="Docker icon" width="100" height="80"> Docker Tutorial
+
 #### Docker Tutorial for Beginner
 
 ## [Website docker](https://docs.docker.com/)
+
 ## Docker architecture (C) Docker Inc.
+
 <img src="./image/docker-architecture.png" alt="Docker architecture" >
 
 ## Docker component interaction ( (C) Luis Herrera Benítez )
@@ -12,10 +15,11 @@
 ## Docker CLI ( [url](https://docs.docker.com/engine/reference/run/) )
 
 #### Docker managing image
-``` powershell
+
+```powershell
  docker image ls
  docker images
- 
+
  Usage:  docker image COMMAND
  Commands:
   build       Build an image from a Dockerfile
@@ -36,10 +40,10 @@
 
 #### Docker managing container
 
-``` powershell
+```powershell
  docker ps
  docker images
- 
+
 Usage:  docker container COMMAND
 
 Manage containers
@@ -74,9 +78,10 @@ Commands:
 ```
 
 #### Docker pull
-``` powershell
+
+```powershell
  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
- 
+
  Pull an image or a repository from a registry
 
 Options:
@@ -85,17 +90,17 @@ Options:
       --platform string         Set platform if server is multi-platform
                                 capable
   -q, --quiet                   Suppress verbose output
-  
+
  # example redis
  docker pull redis
  docker pull redis:latest
  docker pull redis:4.0
 ```
 
-
 #### Architecture Docker pull
+
 ```powershell
-TERMINAL =====> DOCKER CLI =====> DOCKER HOST ( DOCKER DAEMON ) === CHECK CACHE NO ===>  DOCKER HUB ( Registry ) === 
+TERMINAL =====> DOCKER CLI =====> DOCKER HOST ( DOCKER DAEMON ) === CHECK CACHE NO ===>  DOCKER HUB ( Registry ) ===
                                                                ||                                                 ||
                                                                ||                                                 ||
                                                          CHECK CACHE YES                                          ||
@@ -110,7 +115,8 @@ TERMINAL =====> DOCKER CLI =====> DOCKER HOST ( DOCKER DAEMON ) === CHECK CACHE 
 ```
 
 #### Docker run
-``` powershell
+
+```powershell
  Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 Run a command in a new container
@@ -274,22 +280,24 @@ Options:
       --volumes-from list              Mount volumes from the specified
                                        container(s)
   -w, --workdir string                 Working directory inside the container
-  
+
  # example redis
  docker run --name my-redis -d redis:latest
 ```
 
 #### Docker port
-``` powershell
+
+```powershell
   docker run -p portlocal:portcontainer [container]
  # example nginx single port
- docker run -p 3000:80 nginx 
+ docker run -p 3000:80 nginx
  # example nginx multiple ports
  docker run -p 3000:80 -p 3030:80 nginx
 ```
 
 #### Docker start
-``` powershell
+
+```powershell
 Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]
 
 Start one or more stopped containers
@@ -302,7 +310,8 @@ Options:
 ```
 
 #### Docker stop
-``` powershell
+
+```powershell
 Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
 
 Stop one or more running containers
@@ -312,11 +321,12 @@ Options:
 ```
 
 ## Docker volumes ( (C) docker.com )
+
 <img src="https://docs.docker.com/storage/images/types-of-mounts-tmpfs.png" alt="Docker component interaction" >
 
 #### Docker volumes between container and host
 
-``` powershell
+```powershell
 docker run --name nginx-volume -v [path_host]:/usr/share/nginx/html:ro  -d -p 8080:80 nginx
 ```
 
@@ -324,10 +334,20 @@ docker run --name nginx-volume -v [path_host]:/usr/share/nginx/html:ro  -d -p 80
 
 #### Docker volumes between container and container
 
-``` powershell
+```powershell
 docker run --name nginx-volume --volumes-from [container]  -d -p 8080:80 nginx
 ```
 
 ## Docker file
 
 <img src="./image/dockerfile.png" alt="Docker component interaction" >
+
+[Dockerfile doc](https://docs.docker.com/engine/reference/builder/#usage)
+
+```powershell
+# if defile name docker file same Dockerfile and url cmd the same folder have Dockerfile
+docker build --tag [name]:[tag]  .
+
+# else
+docker build --tag [name]:[tag] --file  [PATH/name file dockerfile]
+```
