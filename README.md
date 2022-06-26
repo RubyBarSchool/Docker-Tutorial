@@ -314,17 +314,14 @@ Options:
 ## Docker volumes ( (C) docker.com )
 <img src="https://docs.docker.com/storage/images/types-of-mounts-tmpfs.png" alt="Docker component interaction" >
 
-#### Docker volumes
+#### Docker volumes between container and host
 ``` powershell
-Usage:  docker volume COMMAND
-
-Manage volumes
-
-Commands:
-  create      Create a volume
-  inspect     Display detailed information on one or more volumes
-  ls          List volumes
-  prune       Remove all unused local volumes
-  rm          Remove one or more volumes
-
+docker run --name nginx-volume -v [path_host]:/usr/share/nginx/html:ro  -d -p 8080:80 nginx
 ```
+
+
+#### Docker volumes between container and host
+``` powershell
+docker run --name nginx-volume -v [path_host]:/usr/share/nginx/html:ro  -d -p 8080:80 nginx
+```
+
