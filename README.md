@@ -315,12 +315,15 @@ Options:
 <img src="https://docs.docker.com/storage/images/types-of-mounts-tmpfs.png" alt="Docker component interaction" >
 
 #### Docker volumes between container and host
+
 ``` powershell
 docker run --name nginx-volume -v [path_host]:/usr/share/nginx/html:ro  -d -p 8080:80 nginx
 ```
 
+<img src="./image/docker-volumes-between-container.png" alt="Docker component interaction" >
 
-#### Docker volumes between container and host
+#### Docker volumes between container and container
+
 ``` powershell
 docker run --name nginx-volume -v [path_host]:/usr/share/nginx/html:ro  -d -p 8080:80 nginx
 ```
