@@ -328,3 +328,5 @@ docker run --name nginx-volume -v [path_host]:/usr/share/nginx/html:ro  -d -p 80
 docker run --name nginx-volume --volumes-from [container]  -d -p 8080:80 nginx
 ```
 
+## Docker file
+
