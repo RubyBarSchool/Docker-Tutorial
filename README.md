@@ -330,3 +330,4 @@ docker run --name nginx-volume --volumes-from [container]  -d -p 8080:80 nginx
 
 ## Docker file
 
+<img src="./image/dockerfile.png" alt="Docker component interaction" >
