@@ -311,15 +311,20 @@ Options:
   -t, --time int   Seconds to wait for stop before killing it (default 10)
 ```
 
-## Docker volumes ( (C) Amigos )
-<img src="./image/docker-volumes.png" alt="Docker component interaction" >
+## Docker volumes ( (C) docker.com )
+<img src="https://docs.docker.com/storage/images/types-of-mounts-tmpfs.png" alt="Docker component interaction" >
 
 #### Docker volumes
 ``` powershell
-Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+Usage:  docker volume COMMAND
 
-Stop one or more running containers
+Manage volumes
 
-Options:
-  -t, --time int   Seconds to wait for stop before killing it (default 10)
+Commands:
+  create      Create a volume
+  inspect     Display detailed information on one or more volumes
+  ls          List volumes
+  prune       Remove all unused local volumes
+  rm          Remove one or more volumes
+
 ```
