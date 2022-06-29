@@ -351,3 +351,13 @@ docker build --tag [name]:[tag]  .
 # else
 docker build --tag [name]:[tag] --file  [PATH/name file dockerfile]
 ```
+
+## Docker network
+
+```powershell
+docker network ls
+# have 3 network key ( Driver: bridge, host, null ) default new network connect driver bridge
+docker network inspect [NETWORK]
+
+
+```
