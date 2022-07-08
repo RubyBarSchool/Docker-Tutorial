@@ -1,0 +1,1 @@
+docker exec mysql-db mysql -pdb_pass123 -e 'use foo; select * from myTable'
