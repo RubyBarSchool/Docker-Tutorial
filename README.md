@@ -346,6 +346,8 @@ docker run --name nginx-volume --volumes-from [container]  -d -p 8080:80 nginx
 
 ```powershell
 # if defile name docker file same Dockerfile and url cmd the same folder have Dockerfile
+docker build --tag [name]  .
+
 docker build --tag [name]:[tag]  .
 
 # else
