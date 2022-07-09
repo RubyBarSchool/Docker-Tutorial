@@ -1,0 +1,51 @@
+References
+Before going into the quiz on Docker on Windows, please find some tips and references below:
+
+Summary Points:
+
+Docker on Windows has two options
+
+Docker on Windows using Docker Toolbox - Docker on Linux VM on Oracle Virtual Box on Windows
+
+Docker Toolbox Requirements
+
+64-bit operating system
+
+Windows 7 or Higher
+
+Virtualization enabled on Windows
+
+Docker Toolbox Contents
+
+Oracle Virtualbox
+
+Docker Engine
+
+Docker Machine
+
+Docker Compose
+
+Kitematic GUI
+
+Docker For Windows - Docker on Linux VM on Windows Hyper-V on Windows
+
+Docker For Windows Requirements
+
+Windows 10 Enterprise/Professional Edition
+
+Windows Server 2016
+
+Docker For Windows supports Linux Containers (Default) and Windows Containers
+
+Docker For Windows Container Types:
+
+Windows Server Core: Windows container on native windows server core
+
+Hyper-V Isolation: Windows container on an isolated hyper-v kernel
+
+References and Links:
+Docker on Windows Documentation: https://docs.docker.com/docker-for-windows/
+
+Docker For Windows Download: https://www.docker.com/docker-windows
+
+Docker Toolbox Download: https://www.docker.com/products/docker-toolbox
