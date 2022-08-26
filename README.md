@@ -2,8 +2,8 @@
 
 #### Docker Tutorial for Beginner
 
-## [Website docker](https://docs.docker.com/) 
-## [Udemy](https://www.udemy.com/course/learn-docker/)
+## [Website Docker](https://docs.docker.com/) 
+## [Course Udemy](https://www.udemy.com/course/learn-docker/)
 
 ## Docker architecture (C) Docker Inc.
 
